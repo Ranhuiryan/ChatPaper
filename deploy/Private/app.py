@@ -241,7 +241,7 @@ class Paper:
                         cur_sec_text += text_list[start_page][start_i:end_i]
                 else:
                     for page_i in range(start_page, end_page):                    
-#                         print("page_i:", page_i)
+                        # print("page_i:", page_i)
                         if page_i == start_page:
                             if text_list[start_page].find(sec_name) == -1:
                                 start_i = text_list[start_page].find(sec_name.upper())
@@ -416,6 +416,7 @@ class Reader:
             text += list(paper.section_text_dict.values())[0]
             max_token = 2500 * 4
             text = text[:max_token]
+            print("text:", text)
             chat_summary_text = self.chat_summary(text=text)           
             htmls.append(chat_summary_text)
             
@@ -652,4 +653,4 @@ ip = [
 interface = gradio.Interface(fn=upload_pdf, inputs=ip, outputs="html", title=title, description=description)
 
 # 运行Gradio应用程序
-interface.launch()
+interface.launch(server_port=27890)

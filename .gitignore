@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Packages
+/venv/
+/.venv/
+/pip/
+*.egg-info/
+dist/
+build/
+*.egg
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
+
+# Project specific
+*.log
+*.swp
+*.swo
+*.swn
+*.swo
+*.swp
+*.swn
+*.pyc
+*.pyo
+*.bak
+*.bak.*
+*.swp
+*.bak
+*.bak.*
+*.DS_Store
+
+# Dependencies
+/arxiv
+/PyMuPDF
+/requests
+/tiktoken
+/tenacity
+/pybase64
+/Pillow
+/openai
+/markdown
+
+# API Key
+apikey.ini
+**/apikey.ini
