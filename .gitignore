@@ -46,3 +46,4 @@ build/
 # API Key
 apikey.ini
 **/apikey.ini
+deploy/Private/apikey.ini
